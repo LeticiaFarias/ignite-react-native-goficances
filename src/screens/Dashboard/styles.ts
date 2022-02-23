@@ -1,14 +1,13 @@
 import styled from 'styled-components/native';
+import { RFPercentage } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
   flex: 1;
-  align-items: center;
-  justify-content: center;
-  background-color: #7159c1;
+  background-color: ${({ theme }) => theme.colors.background};
 `;
 
-export const Title = styled.Text`
-  font-size: 26px;
-  color: #fff;
-  font-weight: bold;
+export const Header = styled.View`
+  width: 100%;
+  height: ${RFPercentage(42)}px;
+  background-color: ${({ theme }) => theme.colors.primary};
 `;
